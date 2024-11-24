@@ -3,3 +3,9 @@
 /audio1.wav
 /audio2.mp3
 /input_video.mp4
+audios
+test_video
+*/__pycache__
+model.pth
+.gitignore
+.gitignore
