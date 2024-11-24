@@ -9,3 +9,5 @@ test_video
 model.pth
 .gitignore
 .gitignore
+inference.ipynb
+inference.ipynb
