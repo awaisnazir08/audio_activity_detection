@@ -11,3 +11,4 @@ model.pth
 .gitignore
 inference.ipynb
 inference.ipynb
+main2.py
