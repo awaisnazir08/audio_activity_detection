@@ -1,0 +1,15 @@
+# Hop Length: Number of samples between consecutive frames in the spectrogram
+HOP_LENGTH: 1024
+# Number of Mel frequency bands for Mel spectrogram
+N_MELS: 64
+# Sample rate of the audio (samples per second)
+SAMPLE_RATE: 22050
+# Hidden size of the LSTM layer (number of LSTM units)
+HIDDEN_SIZE: 64
+
+VIDEO_DIRECTORY: 'App/test_video'
+
+MERGE_THRESHOLD: 3
+
+DURATION_THRESHOLD: 1
+

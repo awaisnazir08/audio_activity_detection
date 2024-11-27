@@ -1,5 +1,29 @@
 from audio_extract import extract_audio
 import os
+import yaml
+
+def load_config(file_path: str = 'App/config.yaml') -> dict:
+    """
+    Loads a YAML configuration file.
+
+    Args:
+        file_path (str): Path to the YAML configuration file.
+
+    Returns:
+        dict: Parsed configuration as a dictionary.
+
+    Raises:
+        FileNotFoundError: If the file does not exist.
+        yaml.YAMLError: If there is an error in parsing the YAML file.
+    """
+    try:
+        with open(file_path, 'r') as file:
+            config = yaml.safe_load(file)
+        return config
+    except FileNotFoundError:
+        raise FileNotFoundError(f"The configuration file at {file_path} does not exist.")
+    except yaml.YAMLError as e:
+        raise yaml.YAMLError(f"Error parsing YAML file: {e}")
 
 def video_to_audio(video_path, audio_path):
     """
