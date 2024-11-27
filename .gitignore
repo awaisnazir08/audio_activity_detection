@@ -12,3 +12,5 @@ model.pth
 inference.ipynb
 inference.ipynb
 main2.py
+ll_model.pth
+lstm_model.pth
