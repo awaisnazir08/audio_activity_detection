@@ -20,7 +20,7 @@ def main():
     # extract audio from video
     video_to_audio(video_path, f'audio_{video_name[5: -4]}.mp3')
 
-    y, sample_rate = librosa.load(f'audio_{video_name[5: -4]}.mp3', sr=22050, mono=True)
+    y, sample_rate = librosa.load(f'audio_{video_name[5: -4]}.mp3', sr=config_file['SAMPLE_RATE'], mono=True)
 
     mel_spec = librosa.feature.melspectrogram(y=y, sr=config_file['SAMPLE_RATE'], n_mels=config_file['N_MELS'], hop_length=config_file['HOP_LENGTH'])
     mel_spec = librosa.power_to_db(mel_spec, ref=np.max)
