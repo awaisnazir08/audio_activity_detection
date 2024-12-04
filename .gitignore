@@ -8,12 +8,14 @@ test_video
 */__pycache__
 model.pth
 .gitignore
-.gitignore
 inference.ipynb
 inference.ipynb
 main2.py
 ll_model.pth
 lstm_model.pth
 **/__pycache__/
-transformer_model_weights
-
+model_weights
+LabelBox
+Audios
+Videos
+old_audios
