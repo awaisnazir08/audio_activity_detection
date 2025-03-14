@@ -20,3 +20,7 @@ Audios
 Videos
 old_audios
 timestamp_annotations.json
+Yamnet/yamnet_class_map.csv
+Audio_data_labelbox
+latest_timestamp_annotations.json
+processed_data.json
