@@ -16,7 +16,7 @@ solver = dict(
 optimizer = dict(type="AdamW", lr=1e-4, weight_decay=0.05, paramwise=True)
 scheduler = dict(type="LinearWarmupCosineAnnealingLR", warmup_epoch=2, max_epoch=20)
 
-inference = dict(load_from_raw_predictions=False, save_raw_prediction=False)
+inference = dict(load_from_raw_predictions=False, save_raw_prediction=True)
 post_processing = dict(
     nms=dict(
         use_soft_nms=True,
@@ -27,7 +27,7 @@ post_processing = dict(
         multiclass=True,
         voting_thresh=0.7,  #  set 0 to disable
     ),
-    save_dict=False,
+    save_dict=True,
 )
 
 workflow = dict(
