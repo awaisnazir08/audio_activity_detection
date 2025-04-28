@@ -35,3 +35,6 @@ anet_val_video.txt
 ActionFormer/datafiles/thumos_14_anno.json
 .gitignore
 ActionFormer/model weights/actionformer_thumos_i3d_epoch_34_8e5ac8fd.pth
+ActionFormer/datafiles/log.json
+ActionFormer/datafiles/result_detection.json
+ActionFormer/model weights/best.pth
