@@ -26,3 +26,9 @@ latest_timestamp_annotations.json
 processed_data.json
 activitynet_annotations.json
 activitynet_annotations_with_subset.json
+Mmaction2/data_files
+Mmaction2/latest
+Mmaction2/working
+Mmaction2/New folder
+anet_train_video.txt
+anet_val_video.txt

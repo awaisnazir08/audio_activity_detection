@@ -30,7 +30,7 @@ def generate_rawframes_filelist():
 
     def simple_label(anno):
         if not anno:
-            return None
+            return -1
         label = anno[0]['label']
         return anet_labels.index(label)
 
@@ -52,6 +52,8 @@ def generate_rawframes_filelist():
         if subset in ['training', 'validation']:
             annotations = data['annotations']
             label = simple_label(annotations)
+            if not label:
+                continue
             if subset == 'training':
                 dir_list = train_dir_list
                 data_dict = training
