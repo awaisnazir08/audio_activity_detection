@@ -32,3 +32,6 @@ Mmaction2/working
 Mmaction2/New folder
 anet_train_video.txt
 anet_val_video.txt
+ActionFormer/datafiles/thumos_14_anno.json
+.gitignore
+ActionFormer/model weights/actionformer_thumos_i3d_epoch_34_8e5ac8fd.pth
